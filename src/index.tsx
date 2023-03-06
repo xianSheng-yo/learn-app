@@ -4,9 +4,12 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 // import App from './App'
 import { RouterProvider } from 'react-router-dom'
+import { Inspector } from 'react-dev-inspector'
+
 import { router } from './router'
 
 // import reportWebVitals from './reportWebVitals'
+const isDev = process.env.NODE_ENV === 'development'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
@@ -14,6 +17,14 @@ root.render(
   <>
     <RouterProvider router={router} />
     {/* <ClickToComponent editor="vscode" /> */}
+    {isDev && (
+      <Inspector
+        // props see docs:
+        // https://github.com/zthxxx/react-dev-inspector#inspector-component-props
+        keys={['control', 'shift', 'command', 'c']}
+        disableLaunchEditor={false}
+      />
+    )}
   </>
   // <App />,
   // </React.StrictMode>
