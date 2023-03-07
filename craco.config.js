@@ -25,8 +25,8 @@ module.exports = {
       return webpackConfig
     },
     plugins: [
-      new WebpackBar(),
-      new ReactInspectorPlugin()
+      new WebpackBar()
+      // new ReactInspectorPlugin()
       // {
       //   // react-dev-inspector的配置 目前这些配置足够点击页面直接在vscode编辑器中找到对应的文件了
       //   //剩余的高级配置需要自己去官网上学习，
