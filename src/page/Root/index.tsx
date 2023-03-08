@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import {
-  Link,
+  NavLink,
   LoaderFunction,
   Outlet,
   useLoaderData,
@@ -28,18 +28,24 @@ const Root: React.FC = () => {
   return (
     <>
       <div>
-        <ul>
+        <ul
+          style={{
+            padding: '0 60px',
+            display: 'flex',
+            justifyContent: 'space-between'
+          }}
+        >
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/d3">D3</Link>
+            <NavLink to="/d3">D3</NavLink>
           </li>
           <li>
-            <Link to="/sortable">Sortable</Link>
+            <NavLink to="/sortable">Sortable</NavLink>
           </li>
           <li>
-            <Link to="/pixi">Pixi</Link>
+            <NavLink to="/pixi">Pixi</NavLink>
           </li>
         </ul>
         <hr />

@@ -27,6 +27,7 @@ specifiers:
   eslint-plugin-prettier: ^3.4.0
   eslint-plugin-react: ^7.24.0
   husky: ^7.0.0
+  normalize.css: ^8.0.1
   pixi.js: ^7.1.4
   prettier: ^2.3.2
   react: ^18.1.0
@@ -57,6 +58,7 @@ dependencies:
   array-move: 4.0.0
   click-to-react-component: 1.0.8_zula6vjvt3wdocc4mwcxqa6nzi
   d3: 7.8.2
+  normalize.css: 8.0.1
   pixi.js: 7.1.4
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -8529,6 +8531,10 @@ packages:
   /normalize-url/6.1.0:
     resolution: {integrity: sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==}
     engines: {node: '>=10'}
+    dev: false
+
+  /normalize.css/8.0.1:
+    resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==}
     dev: false
 
   /npm-run-path/4.0.1:
