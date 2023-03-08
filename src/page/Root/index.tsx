@@ -6,7 +6,7 @@ import {
   useLoaderData,
   useNavigation
 } from 'react-router-dom'
-import { getData } from '../D3'
+import { getData } from '../D3/d3'
 
 export const loader: LoaderFunction = async (args) => {
   const url = new URL(args.request.url)
@@ -37,6 +37,9 @@ const Root: React.FC = () => {
           </li>
           <li>
             <Link to="/sortable">Sortable</Link>
+          </li>
+          <li>
+            <Link to="/pixi">Pixi</Link>
           </li>
         </ul>
         <hr />
