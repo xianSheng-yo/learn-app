@@ -1,5 +1,8 @@
 import React from 'react'
-import { BlurFilter } from 'pixi.js'
+/* pixijs 7.x 控制台会报eslint警告 */
+// import { BlurFilter } from 'pixi.js'
+import { filters } from 'pixi.js'
+const { BlurFilter } = filters
 import { Stage, Container, Sprite, Text } from '@pixi/react'
 import { useMemo } from 'react'
 
